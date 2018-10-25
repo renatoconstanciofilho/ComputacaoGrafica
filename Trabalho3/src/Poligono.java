@@ -101,8 +101,8 @@ public class Poligono {
 	}
 
 	public Point4D getUltimoPonto() {
-		return listaPontos != null && listaPontos.isEmpty() ? listaPontos.get(listaPontos.size() - 1) : null;
-	}
+	    return listaPontos.isEmpty()? null : listaPontos.get(listaPontos.size() - 1);
+	  }
 
 	public ArrayList<Point4D> getListaPontos() {
 		return listaPontos;

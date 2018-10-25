@@ -58,15 +58,14 @@ public class Main implements GLEventListener, KeyListener, MouseListener, MouseM
 		gl.glLoadIdentity();
 		glu.gluOrtho2D(esquerda, direita, superior, inferior);
 
-		ArrayList<Poligono> poligonos = Mundo.getInstance().getListaPoligonos();
-		if (!poligonos.isEmpty()) {
-			for (Poligono poligono : poligonos) {
-				poligono.desenha(gl);
-			}
-			Poligono poligonoSelecionado = Mundo.getInstance().getPoligonoSelecionado();
-			if (poligonoSelecionado != null)
-				poligonoSelecionado.desenhaBBox(gl);
+		// Percorre a lista dos poligonos contido no mundo
+		for (Poligono poligono : Mundo.getInstance().getListaPoligonos()) {
+			poligono.desenha(gl);
+			// Se o poligono for o selecionado desenha a bbox
+			if (poligono.equals(Mundo.getInstance().getPoligonoSelecionado()))
+				poligono.desenhaBBox(gl);
 		}
+
 		gl.glFlush();
 	}
 

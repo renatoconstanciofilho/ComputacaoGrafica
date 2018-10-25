@@ -9,7 +9,7 @@ public class Mundo {
 
 	// https://www.devmedia.com.br/padrao-de-projeto-singleton-em-java/26392
 
-	private static Mundo instance = new Mundo();
+	private static Mundo uniqueInstance = new Mundo();
 	
 	// Janela
 	private int esquerda = -400;
@@ -26,9 +26,7 @@ public class Mundo {
 	}
 
 	public static Mundo getInstance() {
-		if (instance == null)
-			instance = new Mundo();
-		return instance;
+		return uniqueInstance;
 	}
 
 	public void adicionarPoligono() {
