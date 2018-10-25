@@ -17,12 +17,13 @@ public class Mundo {
 	private int superior = 400;
 	private int inferior = -400;
 
-//	private Mundo() {
-//		listaPoligonos = new ArrayList<>();
-//		camera = new Camera(0, 400, 400, 0);
-//		poligonoSelecionado = new Poligono();
-//		poligonoSelecionadoPonto = poligonoSelecionado.getUltimoPonto();
-//	}
+	private Mundo() {
+		listaPoligonos = new ArrayList<>();
+		camera = new Camera();
+		poligonoSelecionado = new Poligono();
+		listaPoligonos.add(poligonoSelecionado);
+		poligonoSelecionadoPonto = poligonoSelecionado.getUltimoPonto();
+	}
 
 	public static Mundo getInstance() {
 		if (instance == null)
