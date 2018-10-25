@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Q1/src"/>
+	<classpathentry kind="src" path="Q2/src"/>
+	<classpathentry kind="src" path="Q3/src"/>
+	<classpathentry kind="src" path="Q4/src"/>
+	<classpathentry kind="src" path="Q5/src"/>
+	<classpathentry kind="src" path="Q6/src"/>
+	<classpathentry kind="src" path="Q7/src"/>
+	<classpathentry kind="lib" path="Q1/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q1/jogl.jar"/>
+	<classpathentry kind="lib" path="Q2/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q2/jogl.jar"/>
+	<classpathentry kind="lib" path="Q3/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q3/jogl.jar"/>
+	<classpathentry kind="lib" path="Q4/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q4/jogl.jar"/>
+	<classpathentry kind="lib" path="Q5/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q5/jogl.jar"/>
+	<classpathentry kind="lib" path="Q6/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q6/jogl.jar"/>
+	<classpathentry kind="lib" path="Q7/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="Q7/jogl.jar"/>
+	<classpathentry kind="output" path="Q1/bin"/>
+</classpath>
